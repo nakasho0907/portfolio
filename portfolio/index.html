@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shota Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap 4 の読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/load.js"></script>
+
+    <!-- jQuery.jsの読み込み -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <!-- スムーズスクロール部分の記述 -->
+    <script src="js/scroll.js"></script>
+</head>
+
+<body>
+    <header class="sticky-top"></header>
+    <main class="w-100">
+        <div class="mainimg">
+            <p><b>Shota Nakahira's Portfolio</b></p>
+        </div>
+
+        <div class="container" id="profile">
+            <div class="row">
+                <div class="col-12">
+                    <h2>PROFILE</h2>
+                </div>
+                <div class="col-md-4 col-12">
+                    <img src="img/profile.png" alt="プロフィール写真">
+                </div>
+                <div class="col">
+                    <p class="name">中平 翔太 （なかひら しょうた）</p>
+
+                    <p>平成5年9月7日生まれで27歳です。
+                        ITベンチャー企業でWEBディレクターを4年経験しました。<br>
+                        現在は大手SES企業にて未経験エンジニアとして在職しています。
+                        自宅待機で Linuc研修 & Boostrapを使ったWEBサイト構築の勉強に励んでいます。
+                        <br>
+                        次はWordpressでのサイト制作の勉強をする予定です。
+                        <br>
+                        Webの企画・開発・運用保守の仕事をこなしたいと思い日々精進中です。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="skill">
+            <div class="row">
+                <div class="col-12">
+                    <h2>SKILL</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="subtitle"><i class="fas fa-desktop"></i>フロントエンド</p>
+                    <table class="table text-left">
+                        <thead>
+                            <tr>
+                                <th>技術</th>
+                                <th>経験年数</th>
+                                <th>スキル詳細</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>HTML</th>
+                                <td>4年</td>
+                                <td>実務でwebサイトの修正、独学でLP複写</td>
+                            </tr>
+                            <tr>
+                                <th>CSS</th>
+                                <td>4年</td>
+                                <td>上に同じ。SCSSでのコーディング可</td>
+                            </tr>
+                            <tr>
+                                <th>Boostrap</th>
+                                <td>0.5年</td>
+                                <td>独学でLP複写の際に使用。</td>
+                            </tr>
+                            <tr>
+                                <th>javascript</th>
+                                <td>1年</td>
+                                <td>実務でjQuery・JSONの修正、独学でjs基礎を動画で習得</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="subtitle"><i class="fas fa-desktop"></i>バックエンド</p>
+                    <table class="table text-left">
+                        <thead>
+                            <tr>
+                                <th>技術</th>
+                                <th>経験年数</th>
+                                <th>スキル詳細</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Java</th>
+                                <td>2年</td>
+                                <td>Java研修・Spring Bootで仕様書を読み簡易ショッピングサイト構築</td>
+                            </tr>
+                            <tr>
+                                <th>php</th>
+                                <td>0.5年</td>
+                                <td>独学でphp基礎を動画で習得・簡易ひとこと掲示板サイト構築</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="subtitle"><i class="fas fa-database"></i>DB</p>
+                    <table class="table text-left">
+                        <thead>
+                            <tr>
+                                <th>技術</th>
+                                <th>経験年数</th>
+                                <th>スキル詳細</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>mysql</th>
+                                <td>0.5年</td>
+                                <td>簡易ショッピングサイト構築・簡易ひとこと掲示板サイト構築の際に使用</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="subtitle"><i class="fas fa-clipboard-check"></i>保有資格</p>
+                    <table class="table text-left">
+                        <thead>
+                            <tr>
+                                <th>資格</th>
+                                <th>取得時期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ITパスポート</td>
+                                <td>2020年7月</td>
+                            </tr>
+                            <tr>
+                                <td>Java Silver SE8</td>
+                                <td>2020年7月</td>
+                            </tr>
+                            <tr>
+                                <td>Oracle Master DBA Bronze</td>
+                                <td>2020年8月</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="works">
+            <div class="row">
+                <div class="col-12">
+                    <h2>WORKS</h2>
+                    <p>複写した作品です。</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <a data-toggle="modal" data-target="#exampleModalScrollable" style="cursor: pointer;">
+                            <img class="card-img-top" src="img/works/work1.png">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">模写作品1</h4>
+                            <p class="card-text">
+                                Boostrapを使用したレイアウト。<br>
+                                レスポンシブ対応しています。
+                            </p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalScrollable">
+                                サイトを見る
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenteredLabel">模写作品1</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/works/work11.png" width="100%">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">閉じる</button>
+
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#exampleModalScrollable1">スマホサイズを見る</button>
+                                        </div>
+
+
+                                        <!-- Modal -->
+                                        <div class="modal" id="exampleModalScrollable1" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalScrollableLabel1" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenteredLabel">
+                                                            模写作品1（スマホサイズ）</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="img/works/work11sp.png" width="100%">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">閉じる</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <a data-toggle="modal" data-target="#exampleModalScrollable2" style="cursor: pointer;">
+                            <img class="card-img-top" src="img/works/work2.png">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">模写作品2</h4>
+                            <p class="card-text">
+                                flexboxを使ったレイアウト<br>
+                                レスポンシブ対応していません。
+                            </p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalScrollable2">
+                                サイトを見る
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal" id="exampleModalScrollable2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalScrollableLabel2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenteredLabel">模写作品2</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/works/work22.png" width="100%">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">閉じる</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <a data-toggle="modal" data-target="#exampleModalScrollable3" style="cursor: pointer;">
+                            <img class="card-img-top" src="img/works/work3.png">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">模写作品3</h4>
+                            <p class="card-text">
+                                2カラムサイト。<br>
+                                レスポンシブ対応していません。
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalScrollable3">
+                                サイトを見る
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal" id="exampleModalScrollable3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalScrollableLabel3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenteredLabel">模写作品3</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/works/work33.png" width="100%">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">閉じる</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-12">
+                    <h2>CONTACT</h2>
+                    <p style="color:red">問い合わせフォーム改装中です。</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <label>お名前</label>
+                            <input type="text" class="form-control" id="name" placeholder="テスト 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label>メールアドレス</label>
+                            <input type="text" class="form-control" id="mail" placeholder="test@test.com">
+                        </div>
+                        <div class="form-group">
+                            <label>問い合わせ内容</label>
+                            <textarea id="textarea1" class="form-control" placeholder="問い合わせ内容"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">送信</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

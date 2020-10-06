@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+$main-color: #fff;
+
+/* 基本設定： ページ全体 */
+
+body {
+    margin: 0 auto;
+    padding: 0px 0 0;
+    text-align: center;
+    background: #fff;
+    font-family: Verdana, Arial, Helvetica, "meirio", "メイリオ", "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4",
+        Osaka, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.sp {
+    display: none !important;
+}
+
+header {
+    height: 50px;
+    background: white;
+    h1.headlogo {
+        font-size: 0;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    navi {
+        min-height: 50px;
+        > ul {
+            list-style: none;
+            margin-bottom: 0;
+            > li {
+                padding: 10px;
+                > a {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+main {
+    h2 {
+        font-size: 2.5em;
+        margin: 0.5em;
+    }
+
+    i {
+        padding-right: 0.5em;
+    }
+
+    .mainimg {
+        background: url("../img/main.jpg") no-repeat center / cover;
+        height: 500px;
+        margin-bottom: 2%;
+        p {
+            color: white;
+            font-size: 3em;
+            position: relative;
+            top: calc(50% - 30px);
+        }
+        &::before {
+            /* 透過した黒を上から重ねるイメージ */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* 自由に位置指定 */
+            position: absolute;
+            top: 50px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: " ";
+            height: 500px;
+        }
+    }
+
+    #profile {
+        margin-top: -50px;
+        padding-top: 50px;
+        margin-bottom: 2em;
+        img {
+            width: 100%;
+        }
+        p {
+            line-height: 2;
+            text-align: left;
+
+            &.name {
+                font-size: 25px;
+            }
+        }
+        .table th:nth-child(-n + 2) {
+            width: 25%;
+        }
+    }
+
+    #skill {
+        margin-top: -50px;
+        padding-top: 50px;
+        margin-bottom: 2em;
+
+        p.subtitle {
+            font-size: 23px;
+            margin: 1em;
+        }
+
+        .table th:nth-child(-n + 2) {
+            width: 25%;
+        }
+
+        .row {
+            margin-bottom: 1.5em;
+
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    #works {
+        margin-top: -50px;
+        padding-top: 50px;
+        margin-bottom: 2em;
+    }
+    #contact {
+        margin-top: -50px;
+        padding-top: 50px;
+        margin-bottom: 2em;
+
+        form {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    }
+}
+
+footer {
+    height: 80px;
+    background: #1c4147;
+
+    > div.footermenu {
+        > ul {
+            padding-inline-start: 0px;
+            list-style: none;
+            margin-bottom: 0;
+            > li {
+                padding: 10px;
+                > a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    > .copyright {
+        color: lightgray;
+        font-size: 0.8em;
+    }
+}
+
+/* スマホ画面用（767以下） */
+@media screen and (max-width: 767px) {
+    header {
+        .container-fluid {
+            padding: 9;
+        }
+    }
+    .pc {
+        display: none !important;
+    }
+    .sp {
+        display: block !important;
+    }
+
+    main {
+        .mainimg {
+            height: 250px;
+            &::before {
+                height: 250px;
+            }
+            p {
+                font-size: 2em;
+            }
+        }
+
+        .table {
+            font-size: 12px;
+        }
+    }
+    footer {
+        li {
+            font-size: 11px;
+        }
+    }
+}
