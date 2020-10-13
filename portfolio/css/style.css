@@ -8,6 +8,10 @@ body {
   font-family: Verdana, Arial, Helvetica, "meirio", "メイリオ", "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック", sans-serif;
 }
 
+.freebirdFormviewerViewCenteredContent {
+  max-width: unset;
+}
+
 .sp {
   display: none !important;
 }
