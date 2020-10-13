@@ -405,8 +405,26 @@
                             <label>問い合わせ内容</label>
                             <textarea name="textarea1" class="form-control" placeholder="問い合わせ内容"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mb-2">送信</button>
+                        <input type="submit" name="send" value="送信" class="btn btn-primary mb-2"></input>
                     </form>
+
+                    <form action="form.php" method="post">
+                        <p>
+                          送信先
+                        </p>
+                        <input type="text" name="to">
+                        <p>
+                          メールのタイトル
+                        </p>
+                        <input type="text" name="title">
+                        <p>
+                          本文
+                        </p>
+                        <textarea name="content" cols="50" rows="5"></textarea>
+                        <p>
+                          <input type="submit" name="send" value="送信">
+                        </p>
+                      </form>
                 </div>
             </div>
         </div>
