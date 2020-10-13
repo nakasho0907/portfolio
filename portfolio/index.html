@@ -392,7 +392,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <form action="form.php" method="post">
+                    <form class="formrun" action="thanks.html" method="post">
                         <div class="form-group">
                             <label>お名前</label>
                             <input type="text" class="form-control" name="name" placeholder="テスト 太郎">
@@ -407,30 +407,15 @@
                         </div>
                         <input type="submit" name="send" value="送信" class="btn btn-primary mb-2"></input>
                     </form>
-
-                    <form action="form.php" method="post">
-                        <p>
-                          送信先
-                        </p>
-                        <input type="text" name="to">
-                        <p>
-                          メールのタイトル
-                        </p>
-                        <input type="text" name="title">
-                        <p>
-                          本文
-                        </p>
-                        <textarea name="content" cols="50" rows="5"></textarea>
-                        <p>
-                          <input type="submit" name="send" value="送信">
-                        </p>
-                      </form>
                 </div>
             </div>
         </div>
     </main>
 
     <footer></footer>
+
+    <!-- [2] formrun用スクリプト -->
+<script src="https://form.run/js/v1/sdk.js"></script>
 </body>
 
 </html>
