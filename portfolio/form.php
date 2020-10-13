@@ -1,3 +1,1 @@
-<?php
-  echo htmlspecialchars($_POST['message']);
-?>
+a
