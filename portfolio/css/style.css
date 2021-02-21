@@ -119,6 +119,10 @@ main #skill .table th:nth-child(-n + 2) {
   width: 25%;
 }
 
+main table.backend th:first-child {
+  width: 60% !important;
+}
+
 main #skill .row {
   margin-bottom: 1.5em;
 }
